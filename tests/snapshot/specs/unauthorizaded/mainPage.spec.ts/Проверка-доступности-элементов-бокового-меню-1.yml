@@ -1,0 +1,33 @@
+- navigation "Облегченная панель навигации":
+  - list:
+    - listitem:
+      - link "Главная": Главная …
+    - listitem:
+      - link "RUTUBE для блогеров …"
+    - listitem:
+      - link "Каталог …"
+    - listitem:
+      - link "Популярное …"
+    - listitem:
+      - link "В топе …"
+    - listitem:
+      - link "Shorts …"
+    - listitem:
+      - link "ТВ онлайн …"
+    - listitem:
+      - link "Трансляции …"
+    - listitem:
+      - link "Подписки …"
+    - listitem:
+      - link "Моё …"
+    - listitem:
+      - link "Фильмы …"
+    - listitem:
+      - link "Танковый марафон …"
+  - separator
+  - list:
+    - listitem:
+      - link "Смотреть позже …"
+    - listitem:
+      - link "История просмотра …"
+  - separator

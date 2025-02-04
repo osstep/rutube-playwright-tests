@@ -1,0 +1,23 @@
+- list:
+  - listitem:
+    - link "Главная"
+  - listitem:
+    - link "Фильмы"
+  - listitem:
+    - link "Сериалы"
+  - listitem:
+    - link "Телешоу"
+  - listitem:
+    - link "Спорт"
+  - listitem:
+    - link "Блогеры"
+  - listitem:
+    - link "Новости"
+  - listitem:
+    - link "Музыка"
+  - listitem:
+    - link "Подкасты"
+  - listitem:
+    - link "Детям"
+  - listitem:
+    - link "ТВ онлайн"
