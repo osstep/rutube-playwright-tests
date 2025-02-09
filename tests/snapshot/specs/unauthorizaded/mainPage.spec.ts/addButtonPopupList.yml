@@ -1,0 +1,10 @@
+- list:
+  - listitem:
+    - link "Загрузить видео":
+      - img
+  - listitem:
+    - link "Загрузить Shorts":
+      - img
+  - listitem:
+    - link "Создать трансляцию":
+      - img
