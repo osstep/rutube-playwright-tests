@@ -1,0 +1,99 @@
+- navigation:
+  - list:
+    - listitem:
+      - link "Главная"
+    - listitem:
+      - link "RUTUBE для блогеров"
+    - listitem:
+      - link "Каталог"
+    - listitem:
+      - link "Популярное"
+    - listitem:
+      - link "В топе"
+    - listitem:
+      - link "Shorts"
+    - listitem:
+      - link "ТВ онлайн"
+    - listitem:
+      - link "Трансляции"
+    - listitem:
+      - link "Подписки"
+    - listitem:
+      - link "Моё"
+    - listitem:
+      - link "Фильмы"
+    - listitem:
+      - link "Танковый марафон"
+  - separator
+  - region "По темам":
+    - paragraph: Войдите, чтобы подписываться на каналы, комментировать видео и оставлять реакции
+    - button "Вход и регистрация"
+    - button "По темам":
+      - img
+  - separator
+  - list:
+    - listitem:
+      - link "Смотреть позже"
+    - listitem:
+      - link "История просмотра"
+  - separator
+  - region "Cкачать приложения":
+    - text: RUTUBE всегда с вами
+    - list "RUTUBE всегда с вами":
+      - listitem:
+        - link "Скачать APK"
+      - listitem:
+        - link "Ярлык для IOS"
+      - listitem:
+        - link "AppGallery"
+      - listitem:
+        - link "RuStore"
+      - listitem:
+        - link "RuMarket"
+      - listitem:
+        - link "Samsung Galaxy Store"
+  - text: Больше от RUTUBE
+  - list "Секция инструкции":
+    - listitem:
+      - link "SMART TV"
+    - listitem:
+      - link "RUTUBE Детям"
+    - listitem:
+      - link "RUTUBE Спорт"
+    - listitem:
+      - link "RUTUBE Новости"
+  - text: RUTUBE в других соцсетях
+  - list "Присоединяйтесь в социальных сетях":
+    - listitem:
+      - link "VK"
+    - listitem:
+      - link "OK"
+    - listitem:
+      - link "Telegram"
+    - listitem:
+      - link "Дзен"
+  - separator
+  - list "Оставте отзыв":
+    - listitem:
+      - link "Вопросы и ответы"
+    - listitem:
+      - link "Сообщить о проблеме"
+    - listitem:
+      - link "Написать в поддержку"
+  - region "Футер":
+    - list:
+      - listitem:
+        - link "О RUTUBE"
+      - listitem:
+        - link "Направления деятельности"
+      - listitem:
+        - link "Пользовательское соглашение"
+      - listitem:
+        - link "Конфиденциальность"
+      - listitem:
+        - link "Правовая информация"
+      - listitem:
+        - link "Рекомендательная система"
+      - listitem:
+        - link "Фирменный стиль"
+    - paragraph: /© \d+, RUTUBE/
