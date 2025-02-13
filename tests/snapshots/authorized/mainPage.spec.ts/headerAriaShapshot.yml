@@ -1,0 +1,15 @@
+- banner:
+  - button "Открыть меню навигации":
+    - img
+  - button:
+    - img
+  - textbox "Поиск"
+  - button "Виртуальная клавиатура":
+    - img
+  - img
+  - button "Добавить":
+    - img
+  - button "Уведомления":
+    - img
+  - button "Переключить на светлую тему"
+  - img "Иконка канала channel56877604"

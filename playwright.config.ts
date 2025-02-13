@@ -4,16 +4,15 @@ import { defineConfig, devices } from '@playwright/test';
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
+import dotenv from 'dotenv';
+import path from 'path';
+dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
   testDir: './tests',
-  snapshotPathTemplate: '{testDir}/snapshot/{testFilePath}/{arg}{ext}',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -36,18 +35,21 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
+      name: 'chromium authorized',
+      use: { ...devices['Desktop Chrome'], storageState: 'tests/playwright/.auth/user.json' },
+      dependencies: ['auth'],
+      testDir: 'tests/specs/authorized',
+      snapshotPathTemplate: 'tests/snapshots/authorized/{testFilePath}/{arg}{ext}',
+    },
+    {
+      name: 'chromium unauthorized',
       use: { ...devices['Desktop Chrome'] },
+      testDir: 'tests/specs/unauthorizaded',
+      snapshotPathTemplate: 'tests/snapshots/unauthorized/{testFilePath}/{arg}{ext}',
     },
-
     {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      name: 'auth',
+      testMatch: 'specs/authTest.spec.ts',
     },
 
     /* Test against mobile viewports. */
