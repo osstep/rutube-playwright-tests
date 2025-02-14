@@ -1,0 +1,15 @@
+- img "Иконка канала channel56877604"
+- paragraph:
+  - link "channel56877604"
+  - link:
+    - img
+- paragraph: ru****@yandex.ru
+- list:
+  - listitem:
+    - link "Профиль"
+  - listitem:
+    - link "Мой канал"
+  - listitem:
+    - link "Студия RUTUBE"
+- button "Выйти":
+  - img
