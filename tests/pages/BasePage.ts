@@ -14,4 +14,15 @@ export class BasePage {
       name: ariaName,
     });
   }
+  protected async checkLayoutByScreenshot(locator: Locator, screenshotName: string) {
+    await expect(locator).toHaveScreenshot(screenshotName);
+  }
+  protected async hideElement(selector: string) {
+    await this.page.evaluate((selector) => {
+      const header = document.querySelector(selector);
+      if (header) {
+        (header as HTMLElement).style.display = 'none';
+      }
+    }, selector);
+  }
 }
