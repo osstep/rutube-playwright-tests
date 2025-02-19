@@ -1,0 +1,17 @@
+- heading "Моё" [level=1]
+- list:
+    - listitem:
+        - link "Смотреть позже":
+            - img
+    - listitem:
+        - link "Подписки":
+            - img
+    - listitem:
+        - link "История просмотра":
+            - img
+    - listitem:
+        - link "Плейлисты":
+            - img
+- article:
+    - img "bird_looking_for.svg"
+    - text: Вы ещё не подписаны ни на один канал
