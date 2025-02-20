@@ -8,6 +8,12 @@ jobs:
   playwright:
     name: 'Playwright Tests'
     runs-on: ubuntu-latest
+    env:
+      LOGIN: ${{secrets.LOGIN}}
+      PASSWORD: ${{secrets.PASSWORD}}
+      PROXY_IP: ${{secrets.PROXY_IP}}
+      PROXY_LOGIN: ${{secrets.PROXY_LOGIN}}
+      PROXY_PASSWORD: ${{secrets.PROXY_PASSWORD}}
     container:
       image: mcr.microsoft.com/playwright:v1.50.1-noble
       options: --user 1001
