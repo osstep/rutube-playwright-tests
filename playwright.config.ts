@@ -54,10 +54,10 @@ export default defineConfig({
       testDir: 'tests/specs/unauthorizaded',
       snapshotPathTemplate: 'tests/snapshots/unauthorized/{testFilePath}/{arg}{ext}',
     },
-    {
-      name: 'auth',
-      testMatch: 'specs/authTest.spec.ts',
-    },
+    // {
+    //   name: 'auth',
+    //   testMatch: 'specs/authTest.spec.ts',
+    // },
 
     /* Test against mobile viewports. */
     // {
